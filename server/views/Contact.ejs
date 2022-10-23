@@ -1,0 +1,59 @@
+<%- include('partials/header'); -%>
+<%- include('partials/main_nav'); -%>
+  
+<body style="background-image: url('pink.jpg');">
+<title>Contact Form</title>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link rel="stylesheet" href="contact.css">
+  
+
+  
+  <h1><%= title %></h1>
+   <p>Welcome to <%= title %></p>
+<p>Contact Information<br><br>Email:jongoh@my.centennialcollege.ca</b></p>
+
+
+<div class="form">
+   <header>
+       <br>
+       <h1>Contact Form</h1>
+   </header>
+   <form action="mailto:jongoh@my.centennialcollege.ca" method="post">
+   <label for="firstname">First Name:&nbsp;</label>
+   <input type="text" name="firstname" id="firstname">
+   <br><br>
+   <label for="lastname">Last Name:&nbsp;</label>
+   <input type="text" name="lastname" id="lastname">
+   <br><br>
+
+   <label for="phone">Phone Number:</label>
+   <input type="number" name="phone" id="phone">
+   <br><br>
+
+   <label for="email">Email Address:&nbsp;</label>
+   <input type="text" name="email" id="email">
+   <br><br>
+
+
+
+   <h3>Any Other Comments</h3>
+   <br>
+   <label for="Other">Other: </label>
+   <input type="text" name="Other" id="Other">
+   <br>
+   <br>
+
+   <input type="submit"> <input type="reset">
+   <p><i>Thank you!</i></p>
+
+</form>
+</div>
+
+
+   <%-include ('partials/bottom_nav.ejs');%>
+<%-include ('partials/footer.ejs');%>   
+
+
+
